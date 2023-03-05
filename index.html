@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
+    <style>
+        /* Cyberpunk-style underline on hover */
+        .nav-link:hover::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 2px;
+            margin-top: 2px;
+            background-color: #F43F5E;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <nav class="bg-gray-900">
+        <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+          <div class="relative flex items-center justify-between h-16">
+            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+              <!-- Mobile menu button -->
+              <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <!-- Icon when menu is closed. -->
+                <!--
+                  Heroicon name: menu
+      
+                  Menu open: "hidden", Menu closed: "block"
+                -->
+                <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+                <!-- Icon when menu is open. -->
+                <!--
+                  Heroicon name: x
+      
+                  Menu open: "block", Menu closed: "hidden"
+                -->
+                <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+              <div class="flex-shrink-0">
+                <!-- Replace with your logo -->
+                <img class="h-10 w-auto" src="img/logo.png" alt="Workflow">
+              </div>
+              <div class="hidden sm:block sm:ml-6">
+                <div class="flex space-x-4">
+                  <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                  <a href="#" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
+      
+                  <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Portfolio</a>
+      
+                  <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Resume</a>
+      
+                  <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                </div>
+              </div>
+            </div>
+            <div class="hidden sm:block sm:ml-4">
+                <div class="flex items-center">
+                    
+
+
+<!-- Mobile menu, show/hide based on menu state. -->
+<div class="sm:hidden" id="mobile-menu">
+  <div class="px-2 pt-2 pb-3 space-y-1">
+    <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+    <a href="#" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium">Dashboard</a>
+
+    <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Team</a>
+
+    <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Projects</a>
+
+    <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Calendar</a>
+
+    <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Reports</a>
+  </div>
+</div>
+</nav>
+<header class="bg-gray-800 sm:mb-12 mb-6">
+  <div class="container mx-auto px-4 py-6 sm:py-12 sm:flex sm:flex-wrap sm:items-center">
+    <div class="sm:w-2/5 sm:pr-6 mb-6 sm:mb-0">
+        <lottie-player id="firstLottie" src="https://assets2.lottiefiles.com/packages/lf20_zwhso4fu.json" style="width:auto'
+        ; height: 600px;">"></lottie-player>
+
+        <script>
+        LottieInteractivity.create({
+            mode:"scroll",
+            player:'#firstLottie',
+            actions: [
+                {
+                    visibility:[0,1],
+                    type: "seek",
+                    frames: [0, 480],
+                },
+            ]
+        });
+        </script>
+    </div>
+    <div class="sm:w-3/5 sm:pl-6">
+      <h1 class="text-white text-2xl sm:text-3xl mb-2">Lakshy Chaudhary</h1>
+      <h2 class="text-gray-400 font-medium mb-2">UI/UX Designer and Cybersecurity Analyst</h2>
+      <p class="text-gray-300 mb-6">I am an experienced UI/UX designer and Cybersecurity Analyst with a passion for creating beautiful and intuitive designs that meet the needs of the user. I have expertise in creating wireframes, prototyping, and designing beautiful and responsive user interfaces. I am also well-versed in the latest cybersecurity trends and techniques and work to keep my clients' data and systems secure.</p>
+      <a href="#" class="inline-block py-3 px-6 bg-purple-600 text-white font-medium rounded-lg hover:bg-purple-500 transition duration-200">Hire Me</a>
+    </div>
+  </div>
+</header>
+<main class="container mx-auto px-4 sm:px-0">
+  <section class="sm:mb-12 mb-6">
+    <h2 class="text-xl sm:text-2xl font-bold mb-6">My Certificates</h2>
+    <div class="sm:grid sm:grid-cols-2 sm:gap-4 mb-4">
+        <div class="bg-white rounded-lg shadow-md mb-4 sm:mb-0">
+          <img src="img/cyber-certificate.jpg" alt="" class="w-full h-48 object-cover rounded-t-lg">
+          <div class="px-4 py-2">
+            <h3 class="text-lg font-medium mb-2">Certificate 1</h3>
+            <p class="text-gray-600">I earned the IBM Cybersecurity Analyst certificate, demonstrating my expertise in analyzing security threats, designing solutions, and responding to incidents. This achievement reflects my dedication to staying current with the latest industry developments and will help me advance my career in cybersecurity.</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-md">
+          <img src="https://images.unsplash.com/photo-1587613866459-43b01c7b41f4" alt="" class="w-full h-48 object-cover rounded-t-lg">
+          <div class="px-4 py-2">
+            <h3 class="text-lg font-medium mb-2">Certificate 2</h3>
+            <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac turpis id quam ultricies interdum. Nulla viverra lorem sit amet ligula luctus eleifend. Praesent mattis urna in massa semper, at sagittis enim maximus.</p>
+          </div>
+        </div>
+      </div>
+      <div class="sm:grid sm:grid-cols-2 sm:gap-4">
+        <div class="bg-white rounded-lg shadow-md mb-4 sm:mb-0">
+          <img src="https://images.unsplash.com/photo-1587613866459-43b01c7b41f4" alt="" class="w-full h-48 object-cover rounded-t-lg">
+          <div class="px-4 py-2">
+            <h3 class="text-lg font-medium mb-2">Certificate 3</h3>
+            <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac turpis id quam ultricies interdum. Nulla viverra lorem sit amet ligula luctus eleifend. Praesent mattis urna in massa semper, at sagittis enim maximus.</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-md">
+          <img src="https://images.unsplash.com/photo-1587613866459-43b01c7b41f4" alt="" class="w-full h-48 object-cover rounded-t-lg">
+          <div class="px-4 py-2">
+            <h3 class="text-lg font-medium mb-2">Certificate 4</h3>
+            <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac turpis id quam ultricies interdum. Nulla viverra lorem sit amet ligula luctus eleifend. Praesent mattis urna in massa semper, at sagittis enim maximus.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="sm:mb-12 mb-6">
+      <h2 class="text-xl sm:text-2xl font-bold mb-6">My Skills</h2>
+      <div class="sm:flex sm:flex-wrap mb-4">
+        <div class="w-full sm:w-1/2 mb-4">
+            <h3 class="text-lg font-medium mb-2">UI/UX</h3>
+            <div class="relative pt-1">
+              <div class="overflow-hidden h-2 text-xs flex rounded bg-gray-200">
+                  <div style="width: 70%" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-red-500"></div>
+              </div>
+            </div>
+          <div class="w-full sm:w-1/2 mb-4">
+            <h3 class="text-lg font-medium mb-2">Cybersecurity</h3>
+            <div class="relative pt-1">
+              <div class="overflow-hidden h-2 text-xs flex rounded bg-gray-200">
+                <div style="width: 80%" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-red-500"></div>
+              </div>
+            </div>
+            <h3 class="text-lg font-medium mb-2">HTML</h3>
+            <div class="relative pt-1">
+              <div class="overflow-hidden h-2 text-xs flex rounded bg-gray-200">
+                  <div style="width: 70%" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-red-500"></div>
+              </div>
+            </div>
+            <h3 class="text-lg font-medium mb-2">TailWind Css</h3>
+            <div class="relative pt-1">
+              <div class="overflow-hidden h-2 text-xs flex rounded bg-gray-200">
+                  <div style="width: 90%" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-red-500"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac turpis id quam ultricies interdum. Nulla viverra lorem sit amet ligula luctus eleifend. Praesent mattis urna in massa semper, at sagittis enim maximus.</p>
+      </section>
+      
+      
+      <section class="sm:mb-12 mb-6">
+        <h2 class="text-xl sm:text-2xl font-bold mb-6">Contact Me</h2>
+        <form action="#" method="POST" class="sm:w-1/2">
+          <div class="mb-4">
+            <label for="name" class="block mb-2 font-medium">Name</label>
+            <input type="text" id="name" name="name" class="w-full p-2 rounded border-gray-200 focus:outline-none focus:border-red-500" required>
+          </div>
+          <div class="mb-4">
+            <label for="email" class="block mb-2 font-medium">Email</label>
+            <input type="email" id="email" name="email" class="w-full p-2 rounded border-gray-200 focus:outline-none focus:border-red-500" required>
+          </div>
+          <div class="mb-4">
+            <label for="message" class="block mb-2 font-medium">Message</label>
+            <textarea id="message" name="message" rows="6" class="w-full p-2 rounded border-gray-200 focus:outline-none focus:border-red-500" required></textarea>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="bg-red-500 text-white font-medium px-6 py-2 rounded hover:bg-red-600 transition-colors duration-300">Send Message</button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer class="py-4 bg-gray-900 text-white text-center">
+      <p>Designed and developed by Lakshy Chaudhary</p>
+    </footer>
+  </body>
+  </html>
+      
+    
+
+
+
+
